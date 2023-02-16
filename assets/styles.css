@@ -4,9 +4,13 @@
 
 }
 
+a{
+    font-size: 20px;
+}
+
 header{
     background-color: lightblue;
-    display: flex;
+    display: flex; 
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -22,8 +26,6 @@ h1{
 
 nav a{
     margin-right: 15px;
-    text-decoration: none;
-    border-bottom: 5px solid grey ;
     color: grey;
 }
 
@@ -48,21 +50,20 @@ main{
 }
 
 section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
+    margin: 10px 0;
+}
+
+h3{
+    font-size: 35px;
 }
 
 section h3{
-    border-right: 5px solid aqua;
-    
-    flex: 0 0 10%;
-}
+    flex: 0 0 200px;
+} 
 
 .section>div{
-    flex: 0 0 88%;
+    flex: 1;
+    margin-left: 20px;
 }
 
 .main-project{
@@ -71,9 +72,14 @@ section h3{
     min-height: 300px;
     display: flex;
     align-items: flex-end;
-    border: 3px solid aqua;
+    border: 4px solid aqua;
     margin: 10px 0 10px 0;
     text-decoration: none;
+    opacity: 100%;
+}
+
+.main-project:hover{
+    opacity: 50%;
 }
 
 .project-heading{
@@ -88,13 +94,73 @@ a p{
     font-size: 10px;
 }
 
-.Second-project{
+.second-project{
     background-image: url("./Images/Prework-Study-Guide.JPG");
     background-size: cover;
-    min-height: 300px;
+    min-height: 150px;
     display: flex;
     align-items: flex-end;
-    border: 3px solid aqua;
+    border: 4px solid aqua;
     margin: 10px 0 10px 0s;
     text-decoration: none;
+    opacity: 100%;
 }
+
+.second-project:hover{
+    opacity: 50%;
+}
+
+.PH-Projects1{
+    display: flex;
+    justify-content:space-around;
+    flex: 0 0 50%;
+}
+
+
+.PH-Projects2{
+    display: flex;
+    align-items: center;
+    flex: 0 0 50%
+}
+
+.Placeholder-Project{
+    background-image: url("./Images/placeholder-img.png");
+    background-size: cover;
+    display: flex;
+    min-height: 100px;
+    align-items: flex-end;
+    border: 4px solid aqua;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    opacity: 100%;
+}
+
+ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+li{
+    margin-right: 15px;
+    list-style-type: none;
+}
+
+li a{
+    color: grey;
+}
+.contentborder{
+    border-left: 7px solid aqua;
+}
+
+.content{
+    margin-left: 10px;
+}
+
+/* 
+Media queries needs:
+-No opacity
+-no display flex
+-heading size
+- */
