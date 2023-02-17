@@ -11,17 +11,14 @@ a{
 header{
     background-color: lightblue;
     display: flex; 
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 20px 0;
+    padding: 10px 10px 10px 0;
 }
 
 h1{
-    margin: 0;
     padding: 5px 5px 5px 40px;
     background-color: grey;
-    
 }
 
 nav a{
@@ -39,10 +36,16 @@ nav a{
 }
 
 .hero h2{
-    margin: 0 10px 10px 0;
+    margin: 10px;
     background-color: aqua;
     padding: 10px;
 }
+
+.portrait{
+    max-width: 200px;
+    max-height: 200px;
+}
+
 
 main{
     max-width: 90%;
@@ -54,16 +57,15 @@ section{
 }
 
 h3{
-    font-size: 35px;
+    font-size: 25px;
 }
 
-section h3{
-    flex: 0 0 200px;
-} 
+.contentborder{
+    border-left: 7px solid aqua;
+}
 
-.section>div{
-    flex: 1;
-    margin-left: 20px;
+.content{
+    margin-left: 10px;
 }
 
 .main-project{
@@ -75,23 +77,10 @@ section h3{
     border: 4px solid aqua;
     margin: 10px 0 10px 0;
     text-decoration: none;
-    opacity: 100%;
 }
 
 .main-project:hover{
     opacity: 50%;
-}
-
-.project-heading{
-    background-color: aqua;
-    margin: 0 10px 10px 0;
-    padding: 10px 0 10px 0;
-}
-
-a p{
-    margin: 0;
-    padding: 0;
-    font-size: 10px;
 }
 
 .second-project{
@@ -101,26 +90,27 @@ a p{
     display: flex;
     align-items: flex-end;
     border: 4px solid aqua;
-    margin: 10px 0 10px 0s;
+    margin: 10px 0 10px 0;
     text-decoration: none;
-    opacity: 100%;
 }
 
 .second-project:hover{
     opacity: 50%;
 }
 
-.PH-Projects1{
+.PH-Projects{
     display: flex;
-    justify-content:space-around;
-    flex: 0 0 50%;
+    flex-wrap: wrap;
 }
 
+.Project-Content1{
+    margin: 0 5px 5px 0;
+    flex: 1 1 45%;
+}
 
-.PH-Projects2{
-    display: flex;
-    align-items: center;
-    flex: 0 0 50%
+.Project-Content2{
+    margin: 0 0 5px 5px;
+    flex: 1 1 45%;
 }
 
 .Placeholder-Project{
@@ -130,10 +120,25 @@ a p{
     min-height: 100px;
     align-items: flex-end;
     border: 4px solid aqua;
-    margin: 10px 0 10px 0;
     text-decoration: none;
-    opacity: 100%;
 }
+
+.Placeholder-Project:hover{
+    opacity: 50%;
+}
+
+a p{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+.project-heading{
+    background-color: aqua;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 0;
+}
+
 
 ul{
     display: flex;
@@ -150,17 +155,26 @@ li{
 li a{
     color: grey;
 }
-.contentborder{
-    border-left: 7px solid aqua;
-}
 
-.content{
-    margin-left: 10px;
-}
+@media screen and (min-width: 768px) {
+    h3{
+        font-size: 35px;
+    }
+    .section>div{
+        margin-left: 20px;
+    }
 
-/* 
-Media queries needs:
--No opacity
--no display flex
--heading size
-- */
+    .portrait{
+        max-width: 225px;
+        max-height: 225px;
+        margin-right: 100px;
+    }
+
+}
+@media screen and (min-width: 992px){
+    .portrait{
+        max-width: 275px;
+        max-height: 275px;
+        margin-right: 55px;
+    }
+}
