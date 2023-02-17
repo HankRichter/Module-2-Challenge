@@ -6,7 +6,7 @@ My motivation for this project is too display coding projects I have worked on w
 
 ## Installation
 
-Run the URL(URL) and you will load the site
+Run the URL(https://hankrichter.github.io/Module-2-Challenge/) and you will load the site
 
 ## Usage
 
